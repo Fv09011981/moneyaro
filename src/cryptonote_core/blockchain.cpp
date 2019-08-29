@@ -96,6 +96,9 @@ static const struct {
   // versions 2, 3, 4, 5 and 6 are skipped, in favor of reducing the cost of adopting the POW change and other consensus updates from Monero
   // version 7 starts from block 963500, which is on or around the 3rd of June, 2018. Fork time finalised on 2018-05-24.
   { 7, 963500, 0, 1527137212, 2000000000 },
+
+  // version 8 (PoW change to k12) starts from block 1142000 (with reset diff 40 trillion) which is on or around the 15th of October, 2019. Fork time finalised on 2019-08-29.
+  { 8, 1142000, 0, 1567068544, 40000000000000 },
 };
 static const uint64_t mainnet_hard_fork_version_1_till = 963499;
 
@@ -131,6 +134,9 @@ static const struct {
   // versions 2, 3, 4, 5 and 6 are skipped, in favor of reducing the cost of adopting the POW change and other consensus updates from Monero
   // version 7 starts from block 90000, which is on or around the 24th of May, 2018. Fork time finalised on 2018-05-22.
   { 7, 90000, 0, 1526828224, 50 },
+
+  // version 8 (PoW change to k12) starts from block 112000 with reset diff 500 million
+  { 8, 260000, 0, 1567068544, 500000000 },
 };
 
 //------------------------------------------------------------------
